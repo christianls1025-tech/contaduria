@@ -1,0 +1,1 @@
+Proyecto ContadorPro - versión estática. Todos los archivos de servidor PHP, conexión a base de datos, controladores e historial dinámico fueron eliminados. Los paneles administrativos conservan su apariencia con datos de demostración. Los formularios no almacenan información.

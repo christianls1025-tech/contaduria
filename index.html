@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contador Martín López - Asesoría Contable y Fiscal</title>
+    <meta name="description" content="Asesoría contable y fiscal personalizada en Huauchinango, Puebla. Contabilidad, declaraciones y acompañamiento para emprendedores y pequeñas empresas.">
+
+    <!-- Favicon (calculadora) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%230d6efd'><path d='M7 2h10a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm0 2v4h10V4H7zm0 6v2h4v-2H7zm0 4v2h4v-2H7zm0 4v2h4v-2H7zm6 0v2h4v-2h-4zm0-4v2h4v-2h-4zm0-4v2h4v-2h-4z'/></svg>">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome 6 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts (Inter) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+    <!-- NAVBAR (sin login) -->
+    <nav class="navbar navbar-expand-lg navbar-main sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fa-solid fa-calculator me-2"></i>ContadorPro
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="preguntas.html">Preguntas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="trayectoria.html">Trayectoria</a></li>
+                    <li class="nav-item"><a class="nav-link" href="calendario-fiscal.html">Calendario Fiscal</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contactanos.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO con imagen de fondo de contaduría -->
+    <header class="hero">
+        <div class="container">
+            <div class="row align-items-center min-vh-75">
+                <div class="col-lg-7 text-white">
+                    <span class="badge bg-accent text-dark mb-3 px-3 py-2">ASESORÍA CONTABLE Y FISCAL</span>
+                    <h1 class="display-3 fw-bold lh-1">Tu tranquilidad financiera comienza aquí</h1>
+                    <p class="lead my-4">Acompaño a emprendedores y empresas en sus obligaciones fiscales, administración financiera y toma de decisiones estratégicas.</p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="contactanos.html" class="btn btn-accent btn-lg px-5">Solicitar asesoría</a>
+                        <a href="#presentacion" class="btn btn-outline-light btn-lg px-5">Conóceme</a>
+                    </div>
+                </div>
+                <div class="col-lg-5 mt-5 mt-lg-0">
+                    <div class="hero-stats p-4 bg-white rounded-4 shadow-lg">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="stat-icon"><i class="fa-regular fa-calendar-check"></i></div>
+                            <div><span class="display-6 fw-bold text-primary"><span class="js-years-exp" data-count="15" data-prefix="+">+15</span></span> <span class="text-muted">años de experiencia</span></div>
+                        </div>
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="stat-icon"><i class="fa-regular fa-face-smile"></i></div>
+                            <div><span class="display-6 fw-bold text-primary" data-count="500" data-prefix="+">+500</span> <span class="text-muted">clientes satisfechos</span></div>
+                        </div>
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="stat-icon"><i class="fa-regular fa-star"></i></div>
+                            <div><span class="display-6 fw-bold text-primary" data-count="4.9" data-decimals="1">4.9</span> <span class="text-muted">calificación promedio</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- SECCIÓN: PRESENTACIÓN PERSONAL -->
+    <section id="presentacion" class="py-5">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-4 text-center reveal">
+                    <div class="photo-frame"><img src="image/foto.png" alt="Foto de perfil" class="rounded-circle img-fluid shadow-lg" style="width: 280px; height: 280px; object-fit: cover;"></div>
+                </div>
+                <div class="col-lg-8 reveal">
+                    <span class="badge bg-primary bg-opacity-10 text-primary mb-2 px-3 py-2">CONÓCEME</span>
+                    <h2 class="display-5 fw-bold">Contador Martín López Martínez</h2>
+                    <p class="lead" style="color: var(--muted);">Contador Público y Administrador</p>
+                    <p class="text-muted">
+                        Con más de <span id="years-exp"></span> años de experiencia en el ámbito contable y fiscal, me especializo en diversos casos para brindar asesoría personalizada. Mi enfoque es claro, cercano y práctico: ayudarte a entender tus números para que puedas tomar mejores decisiones y cumplir con tus obligaciones sin estrés.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3 mt-3">
+                        <a href="trayectoria.html" class="btn btn-primary"><i class="fa-solid fa-timeline me-2"></i>Mi trayectoria</a>
+                        <a href="contactanos.html" class="btn btn-outline-primary">Contáctame</a>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <p><i class="fa-regular fa-envelope text-accent me-2"></i> <a href="mailto:martin.lm10@hotmail.com?subject=Hola%2C%20buenas%20tardes%20contador&body=Hola%2C%20buenas%20tardes%20contador">martin.lm10@hotmail.com</a></p>
+                            <p><i class="fa-solid fa-phone text-accent me-2"></i> +52 776 123 1352</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p><i class="fa-solid fa-location-dot text-accent me-2"></i> Huauchinango, Puebla</p>
+                            <p><i class="fa-regular fa-clock text-accent me-2"></i> Lun–Vie 9:00 – 18:00</p>
+                        </div>
+                    </div>
+                    <div class="social-links mt-3">
+                        <a href="https://www.facebook.com/share/19eU9KgxiF/" target="_blank" class="me-3" aria-label="Facebook"><i class="fa-brands fa-facebook fa-2x"></i></a>
+                        <a href="https://www.instagram.com/martin.lm10?igsi=N2gybHNiNHc2dWVt" target="_blank" class="me-3" aria-label="Instagram"><i class="fa-brands fa-instagram fa-2x"></i></a>
+                        <a href="https://wa.me/527761231352?text=Hola%2C%20buenas%20tardes%20contador" target="_blank" class="me-3" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp fa-2x"></i></a>
+                        <a href="mailto:martin.lm10@hotmail.com?subject=Hola%2C%20buenas%20tardes%20contador&body=Hola%2C%20buenas%20tardes%20contador" aria-label="Outlook"><i class="fa-regular fa-envelope fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN: PROCESO DE TRABAJO -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5 reveal">
+                <span class="badge bg-primary bg-opacity-10 text-primary px-3 py-2">¿CÓMO TRABAJAMOS?</span>
+                <h2 class="display-5 fw-bold">Un proceso sencillo y transparente</h2>
+                <p class="text-muted mt-2">Te guío paso a paso para que tengas el control total de tus finanzas.</p>
+            </div>
+            <div class="row g-4 reveal-stagger position-relative">
+                <div class="col-md-3">
+                    <div class="process-card text-center p-3 h-100 reveal-item">
+                        <div class="process-icon mx-auto"><span class="step-number">1</span><i class="fa-regular fa-handshake"></i></div>
+                        <h5>Contacto inicial</h5>
+                        <p class="text-muted small">Agendamos una llamada o reunión para conocer tu situación y necesidades.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="process-card text-center p-3 h-100 reveal-item">
+                        <div class="process-icon mx-auto"><span class="step-number">2</span><i class="fa-regular fa-clipboard"></i></div>
+                        <h5>Análisis</h5>
+                        <p class="text-muted small">Reviso tus documentos, registros y obligaciones fiscales para entender tu caso.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="process-card text-center p-3 h-100 reveal-item">
+                        <div class="process-icon mx-auto"><span class="step-number">3</span><i class="fa-regular fa-pen-to-square"></i></div>
+                        <h5>Propuesta personalizada</h5>
+                        <p class="text-muted small">Te presento un plan de acción claro, con plazos y costos transparentes.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="process-card text-center p-3 h-100 reveal-item">
+                        <div class="process-icon mx-auto"><span class="step-number">4</span><i class="fa-regular fa-circle-check"></i></div>
+                        <h5>Ejecución y seguimiento</h5>
+                        <p class="text-muted small">Implementamos el plan juntos y realizamos un monitoreo constante.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN: ¿A QUIÉN AYUDO? -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-4 reveal">
+                <span class="badge bg-primary bg-opacity-10 text-primary px-3 py-2">PARA TODOS</span>
+                <h2 class="display-5 fw-bold">¿A quién ayudo?</h2>
+            </div>
+            <div class="who-help-card p-5 rounded-4 text-center reveal">
+                <i class="fa-solid fa-users fa-3x text-primary mb-3"></i>
+                <p class="lead fw-semibold" style="font-size: 1.4rem;">
+                    A <strong>cualquier persona</strong>, sin importar su situación, el tamaño de su negocio o su nivel de conocimiento contable.
+                </p>
+                <p class="text-muted">
+                    Ya sea que estés iniciando un emprendimiento, tengas una pequeña empresa, seas freelance, profesional independiente o simplemente necesites orientación para cumplir con tus obligaciones fiscales, <strong>estoy aquí para ayudarte</strong> con un trato cercano, claro y profesional.
+                </p>
+                <p class="text-muted">
+                    Mi compromiso es <strong>simplificar tus finanzas</strong> y darte la tranquilidad de saber que tus números están en buenas manos.
+                </p>
+                <a href="contactanos.html" class="btn btn-accent mt-3">Hablemos sin compromiso</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN: SERVICIOS DESTACADOS -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5 reveal">
+                <span class="badge bg-primary bg-opacity-10 text-primary px-3 py-2">SERVICIOS</span>
+                <h2 class="display-5 fw-bold">Lo que hago por ti</h2>
+                <p class="text-muted mt-2">Soluciones contables y fiscales adaptadas a tus necesidades.</p>
+            </div>
+            <div class="row g-4 justify-content-center reveal-stagger">
+                <div class="col-md-4">
+                    <div class="service-card p-4 h-100 reveal-item">
+                        <div class="service-icon"><i class="fa-solid fa-book"></i></div>
+                        <h4 class="mt-3">Contabilidad general</h4>
+                        <p class="text-muted">Registro, organización y seguimiento de todas tus operaciones financieras.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card p-4 h-100 reveal-item">
+                        <div class="service-icon"><i class="fa-solid fa-file-circle-check"></i></div>
+                        <h4 class="mt-3">Declaraciones fiscales</h4>
+                        <p class="text-muted">Preparación y orientación para declaraciones periódicas y anuales sin errores.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card p-4 h-100 reveal-item">
+                        <div class="service-icon"><i class="fa-solid fa-building"></i></div>
+                        <h4 class="mt-3">Contabilidad empresarial</h4>
+                        <p class="text-muted">Soluciones integrales para pequeñas y medianas empresas en crecimiento.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4 reveal">
+                <a href="servicios.html" class="btn btn-primary px-5">Ver todos los servicios</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN: REDES SOCIALES -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5 reveal">
+                <span class="badge bg-primary bg-opacity-10 text-primary px-3 py-2">SÍGUEME</span>
+                <h2 class="display-5 fw-bold">Conéctate conmigo</h2>
+                <p class="text-muted mt-2">Estoy presente en las principales redes sociales y también por correo.</p>
+            </div>
+            <div class="row g-4 justify-content-center reveal-stagger">
+                <div class="col-md-3 col-6">
+                    <a href="https://www.facebook.com/share/19eU9KgxiF/" target="_blank" class="social-card text-center d-block p-4 reveal-item">
+                        <i class="fa-brands fa-facebook fa-2x"></i>
+                        <h5 class="mt-2">Facebook</h5>
+                        <p class="small text-muted">Sígueme para novedades</p>
+                    </a>
+                </div>
+                <div class="col-md-3 col-6">
+                    <a href="https://www.instagram.com/martin.lm10?igsi=N2gybHNiNHc2dWVt" target="_blank" class="social-card text-center d-block p-4 reveal-item">
+                        <i class="fa-brands fa-instagram fa-2x"></i>
+                        <h5 class="mt-2">Instagram</h5>
+                        <p class="small text-muted">Contenido visual y consejos</p>
+                    </a>
+                </div>
+                <div class="col-md-3 col-6">
+                    <a href="https://wa.me/527761231352?text=Hola%2C%20buenas%20tardes%20contador" target="_blank" class="social-card text-center d-block p-4 reveal-item">
+                        <i class="fa-brands fa-whatsapp fa-2x"></i>
+                        <h5 class="mt-2">WhatsApp</h5>
+                        <p class="small text-muted">Contacto directo</p>
+                    </a>
+                </div>
+                <div class="col-md-3 col-6">
+                    <a href="mailto:martin.lm10@hotmail.com?subject=Hola%2C%20buenas%20tardes%20contador&body=Hola%2C%20buenas%20tardes%20contador" class="social-card text-center d-block p-4 reveal-item">
+                        <i class="fa-regular fa-envelope fa-2x"></i>
+                        <h5 class="mt-2">Outlook</h5>
+                        <p class="small text-muted">Escríbeme por correo</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN: TESTIMONIOS -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5 reveal">
+                <span class="badge bg-primary bg-opacity-10 text-primary px-3 py-2">TESTIMONIOS</span>
+                <h2 class="display-5 fw-bold">Lo que dicen mis clientes</h2>
+            </div>
+            <div class="row g-4 reveal-stagger">
+                <div class="col-md-4">
+                    <div class="testimonial-card p-4 h-100 text-center reveal-item">
+                        <i class="fa-solid fa-quote-left fa-2x text-accent"></i>
+                        <p class="mt-3">Gracias a Martín he podido organizar mis finanzas y cumplir con todas mis obligaciones fiscales sin estrés. Su atención es excelente.</p>
+                        <div class="d-flex align-items-center justify-content-center gap-2 mt-3">
+                            <img src="image/logoMizu.jpeg" alt="Avatar" class="rounded-circle" width="50" height="50" style="object-fit:cover;">
+                            <div class="text-start"><strong>María González</strong><br><span class="small text-muted">Emprendedora</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card p-4 h-100 text-center reveal-item">
+                        <i class="fa-solid fa-quote-left fa-2x text-accent"></i>
+                        <p class="mt-3">Llevamos más de 3 años trabajando con él y la confianza es total. Siempre está al pendiente de nuestra situación fiscal.</p>
+                        <div class="d-flex align-items-center justify-content-center gap-2 mt-3">
+                            <img src="image/logoMizu.jpeg" alt="Avatar" class="rounded-circle" width="50" height="50" style="object-fit:cover;">
+                            <div class="text-start"><strong>Carlos Ruiz</strong><br><span class="small text-muted">Director de PYME</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card p-4 h-100 text-center reveal-item">
+                        <i class="fa-solid fa-quote-left fa-2x text-accent"></i>
+                        <p class="mt-3">Su asesoría ha sido clave para tomar decisiones importantes en mi negocio. Lo recomiendo ampliamente.</p>
+                        <div class="d-flex align-items-center justify-content-center gap-2 mt-3">
+                            <img src="image/logoMizu.jpeg" alt="Avatar" class="rounded-circle" width="50" height="50" style="object-fit:cover;">
+                            <div class="text-start"><strong>Laura Méndez</strong><br><span class="small text-muted">Comerciante</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN: BLOG -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5 reveal">
+                <span class="badge bg-primary bg-opacity-10 text-primary px-3 py-2">BLOG</span>
+                <h2 class="display-5 fw-bold">Artículos recientes</h2>
+                <p class="text-muted mt-2">Consejos y novedades del mundo contable y fiscal.</p>
+            </div>
+            <div class="row g-4 reveal-stagger">
+                <div class="col-md-4">
+                    <div class="blog-card h-100 reveal-item">
+                        <div class="blog-img-wrap">
+                            <img src="image/novedades.jpg" alt="Blog">
+                        </div>
+                        <div class="card-body position-relative">
+                            <span class="badge bg-primary bg-opacity-10 text-primary mb-2">Fiscal</span>
+                            <h5>Novedades fiscales 2026: lo que debes saber</h5>
+                            <p class="text-muted small">Actualizaciones en las declaraciones y beneficios para este año.</p>
+                            <a href="https://www.sat.gob.mx/minisitio/RegularizacionFiscal/RegularizacionFiscal/index.html" target="_blank" class="stretched-link text-primary fw-bold">Leer más →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="blog-card h-100 reveal-item">
+                        <div class="blog-img-wrap">
+                            <img src="image/contabilidad.jpg" alt="Blog">
+                        </div>
+                        <div class="card-body position-relative">
+                            <span class="badge bg-primary bg-opacity-10 text-primary mb-2">Contabilidad</span>
+                            <h5>5 pasos para llevar una contabilidad ordenada</h5>
+                            <p class="text-muted small">Organiza tus registros y evita problemas con el SAT.</p>
+                            <a href="https://konta.com/blog/5-elementos-necesarios-para-llevar-una-contabilidad-correcta" target="_blank" class="stretched-link text-primary fw-bold">Leer más →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="blog-card h-100 reveal-item">
+                        <div class="blog-img-wrap">
+                            <img src="image/regimen.png" alt="Blog">
+                        </div>
+                        <div class="card-body position-relative">
+                            <span class="badge bg-primary bg-opacity-10 text-primary mb-2">Emprendimiento</span>
+                            <h5>¿Cómo elegir el régimen fiscal adecuado?</h5>
+                            <p class="text-muted small">Guía para personas físicas y morales al iniciar un negocio.</p>
+                            <a href="https://www.gob.mx/sat/articulos/conoce-los-tipos-de-regimen-fiscal-para-personas-fisicas?idiom=es" target="_blank" class="stretched-link text-primary fw-bold">Leer más →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4 py-5">
+                <div class="col-md-4">
+                    <h5><i class="fa-solid fa-calculator me-2"></i>ContadorPro</h5>
+                    <p>Asesoría contable y fiscal personalizada para emprendedores y pequeñas empresas.</p>
+                    <div class="social-footer">
+                        <a href="https://www.facebook.com/share/19eU9KgxiF/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/martin.lm10?igsi=N2gybHNiNHc2dWVt" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://wa.me/527761231352?text=Hola%2C%20buenas%20tardes%20contador" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="mailto:martin.lm10@hotmail.com?subject=Hola%2C%20buenas%20tardes%20contador&body=Hola%2C%20buenas%20tardes%20contador"><i class="fa-regular fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <h6>Navegación</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="galeria.html">Galería</a></li>
+                        <li><a href="preguntas.html">Preguntas</a></li>
+                        <li><a href="contactanos.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6>Contacto</h6>
+                    <ul class="list-unstyled">
+                        <li><i class="fa-regular fa-clock me-2"></i> Lun – Vie: 9:00 – 18:00</li>
+                        <li><i class="fa-regular fa-envelope me-2"></i> <a href="mailto:martin.lm10@hotmail.com?subject=Hola%2C%20buenas%20tardes%20contador&body=Hola%2C%20buenas%20tardes%20contador">martin.lm10@hotmail.com</a></li>
+                        <li><i class="fa-solid fa-phone me-2"></i> +52 776 123 1352</li>
+                        <li><i class="fa-solid fa-location-dot me-2"></i> Huauchinango, Puebla</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6>Sígueme</h6>
+                    <p>Conéctate a través de mis redes sociales.</p>
+                    <div class="social-footer">
+                        <a href="https://www.facebook.com/share/19eU9KgxiF/" target="_blank"><i class="fa-brands fa-facebook fa-lg"></i></a>
+                        <a href="https://www.instagram.com/martin.lm10?igsi=N2gybHNiNHc2dWVt" target="_blank"><i class="fa-brands fa-instagram fa-lg"></i></a>
+                        <a href="https://wa.me/527761231352?text=Hola%2C%20buenas%20tardes%20contador" target="_blank"><i class="fa-brands fa-whatsapp fa-lg"></i></a>
+                        <a href="mailto:martin.lm10@hotmail.com?subject=Hola%2C%20buenas%20tardes%20contador&body=Hola%2C%20buenas%20tardes%20contador"><i class="fa-regular fa-envelope fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-light opacity-25">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-0 small">© <span data-year></span> ContadorPro. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="small me-3">Aviso de privacidad</a>
+                    <a href="#" class="small">Términos y condiciones</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón flotante de WhatsApp -->
+    <a href="https://wa.me/527761231352?text=Hola%2C%20buenas%20tardes%20contador" target="_blank" class="whatsapp-float" aria-label="WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Botón volver arriba -->
+    <button id="back-to-top" class="back-to-top" aria-label="Volver arriba">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

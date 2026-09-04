@@ -1,0 +1,169 @@
+/* servicios.css */
+
+/* Hero con altura aumentada y estadísticas */
+.hero-servicios {
+    position: relative;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #0d6efd 0%, #0044a3 100%);
+    overflow: hidden;
+    padding: 2rem 0;
+}
+.hero-servicios::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url('https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1600&h=800&fit=crop') center/cover no-repeat;
+    opacity: 0.25;
+    mix-blend-mode: overlay;
+}
+.hero-servicios .container {
+    position: relative;
+    z-index: 2;
+}
+.hero-servicios h1 {
+    font-size: clamp(2rem, 4.5vw, 3.5rem);
+}
+.hero-servicios .lead {
+    font-size: 1.2rem;
+}
+.hero-stats-servicios {
+    backdrop-filter: blur(8px);
+    background: rgba(255,255,255,0.9) !important;
+    border: 1px solid rgba(255,255,255,0.3);
+}
+.hero-stats-servicios .stat-icon {
+    width: 48px;
+    height: 48px;
+    background: rgba(13, 110, 253, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    color: var(--primary);
+}
+.hero-stats-servicios .btn-accent {
+    font-weight: 700;
+    border-radius: 50px;
+}
+
+/* Tarjetas de servicios con zoom + sombra */
+.service-card-full {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease);
+    border: 1px solid rgba(0,0,0,0.03);
+    text-align: center;
+}
+.service-card-full:hover {
+    transform: scale(1.05) translateY(-6px);
+    box-shadow: 0 20px 55px rgba(13, 110, 253, 0.4), 0 0 0 1px rgba(13,110,253,0.15);
+    border-color: rgba(13,110,253,0.25);
+}
+.service-icon-full {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, rgba(13,110,253,0.1), rgba(13,110,253,0.05));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    color: var(--primary);
+    margin: 0 auto 1rem auto;
+}
+
+/* Sección "Por qué elegirme" con hover zoom */
+.why-card {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+    transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease);
+    border: 1px solid #eef2f7;
+}
+.why-card:hover {
+    transform: scale(1.05) translateY(-6px);
+    box-shadow: 0 12px 40px rgba(13,110,253,0.35), 0 0 0 1px rgba(13,110,253,0.15);
+    border-color: rgba(13,110,253,0.25);
+}
+.why-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, rgba(13,110,253,0.08), rgba(13,110,253,0.02));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+    margin: 0 auto;
+}
+
+/* Sección CTA final */
+.cta-section {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    padding: 4rem 0;
+}
+
+/* Responsive */
+@media (max-width: 991.98px) {
+    .hero-servicios {
+        min-height: 50vh;
+        padding: 2rem 0;
+    }
+    .hero-servicios .row {
+        text-align: center;
+    }
+    .hero-servicios .col-lg-5 {
+        margin-top: 1.5rem !important;
+    }
+    .hero-stats-servicios {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    .hero-servicios .btn-accent {
+        width: 100%;
+    }
+    .service-card-full {
+        margin-bottom: 1rem;
+    }
+    .cta-section .text-lg-end {
+        text-align: center !important;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .hero-servicios {
+        min-height: 40vh;
+        padding: 1.5rem 0;
+    }
+    .hero-servicios h1 {
+        font-size: 1.8rem;
+    }
+    .hero-servicios .lead {
+        font-size: 1rem;
+    }
+    .hero-stats-servicios {
+        padding: 1.5rem !important;
+    }
+    .hero-stats-servicios .display-6 {
+        font-size: 1.5rem;
+    }
+    .service-card-full {
+        padding: 1.25rem !important;
+    }
+    .why-card {
+        padding: 1rem !important;
+    }
+    .why-card h5 {
+        font-size: 1rem;
+    }
+    .cta-section {
+        padding: 2.5rem 0;
+    }
+    .cta-section .display-5 {
+        font-size: 2rem;
+    }
+}

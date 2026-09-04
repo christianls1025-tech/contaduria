@@ -1,0 +1,151 @@
+/* calendario-fiscal.css */
+
+.hero-calendario {
+    position: relative;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #0d6efd 0%, #0044a3 100%);
+    overflow: hidden;
+    padding: 2rem 0;
+}
+.hero-calendario::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1600&h=800&fit=crop') center/cover no-repeat;
+    opacity: 0.25;
+    mix-blend-mode: overlay;
+}
+.hero-calendario .container {
+    position: relative;
+    z-index: 2;
+}
+.hero-calendario h1 {
+    font-size: clamp(2rem, 4.5vw, 3.5rem);
+}
+.hero-calendario .lead {
+    font-size: 1.2rem;
+}
+
+/* Tarjeta de cuenta regresiva */
+.hero-countdown {
+    backdrop-filter: blur(8px);
+    background: rgba(255,255,255,0.95) !important;
+    border: 1px solid rgba(255,255,255,0.3);
+}
+.countdown-number {
+    font-size: 3.2rem;
+    font-weight: 800;
+    color: var(--primary);
+    line-height: 1;
+}
+
+/* ---------- Tarjetas de fechas límite (próximas fechas / obligaciones anuales) ---------- */
+.deadline-card {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    border: 1px solid #eef2f7;
+}
+.deadline-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 40px rgba(13,110,253,0.35), 0 0 0 1px rgba(13,110,253,0.15);
+    border-color: rgba(13,110,253,0.25);
+}
+
+/* ---------- Tarjetas de mes (calendario completo) ---------- */
+.month-card {
+    background: #fff;
+    border-radius: 16px;
+    border: 1px solid #eef2f7;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.04);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+.month-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 35px rgba(13,110,253,0.3), 0 0 0 1px rgba(13,110,253,0.15);
+    border-color: rgba(13,110,253,0.25);
+}
+.month-card-active {
+    border: 2px solid var(--primary);
+    box-shadow: 0 8px 30px rgba(13,110,253,0.2);
+}
+.month-card ul li {
+    border-bottom: 1px dashed #eef2f7;
+    padding-bottom: 0.4rem;
+}
+.month-card ul li:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+/* ---------- Tabla de prórroga por RFC ---------- */
+.rfc-table-wrapper {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+    border: 1px solid #eef2f7;
+    padding: 0.5rem;
+}
+.rfc-table thead {
+    background: rgba(13,110,253,0.06);
+}
+.rfc-table th {
+    color: var(--primary);
+    font-weight: 700;
+    border: none;
+    padding: 0.9rem;
+}
+.rfc-table td {
+    border-color: #eef2f7;
+    padding: 0.8rem;
+}
+
+/* ---------- CTA final ---------- */
+.cta-calendario {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+}
+
+/* Responsive */
+@media (max-width: 991.98px) {
+    .hero-calendario {
+        min-height: 55vh;
+    }
+    .hero-calendario .row {
+        text-align: center;
+    }
+    .hero-calendario .col-lg-5 {
+        margin-top: 1.5rem !important;
+    }
+    .cta-calendario .text-lg-end {
+        text-align: center !important;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .hero-calendario {
+        padding: 1.5rem 0;
+    }
+    .hero-calendario h1 {
+        font-size: 1.8rem;
+    }
+    .hero-calendario .lead {
+        font-size: 1rem;
+    }
+    .countdown-number {
+        font-size: 2.4rem;
+    }
+    .deadline-card,
+    .month-card {
+        padding: 1rem !important;
+    }
+    .cta-calendario {
+        padding: 2.5rem 0;
+        text-align: center;
+    }
+    .cta-calendario .display-6 {
+        font-size: 1.5rem;
+    }
+}
